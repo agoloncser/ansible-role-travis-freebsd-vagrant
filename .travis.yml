@@ -1,0 +1,10 @@
+---
+version: ~> 1.0
+import: agoloncser/travis-shared-configs:vagrant-molecule.yml
+
+env:
+  global:
+    - VAGRANT_VER: 2.2.9
+  jobs:
+    - MOLECULE_DISTRO_BOX: roboxes/freebsd11
+    - MOLECULE_DISTRO_BOX: roboxes/freebsd12
