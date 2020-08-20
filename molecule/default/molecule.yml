@@ -10,6 +10,11 @@ driver:
     options:
       memory: 2048
       cpus: 2
+lint: |
+  set -e
+  yamllint .
+  prettier --check "**/*.yml" "**/*.yaml"
+  ansible-lint
 platforms:
   - name: instance
     box: ${MOLECULE_DISTRO_BOX:-"roboxes/freebsd12"}
