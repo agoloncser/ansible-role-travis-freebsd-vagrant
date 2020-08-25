@@ -2,4 +2,4 @@
 - hosts: localhost
   remote_user: root
   roles:
-    - travis-freebsd-ansible
+    - travis_freebsd_vagrant

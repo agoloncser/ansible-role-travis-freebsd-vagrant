@@ -1,5 +1,4 @@
 ---
-# tasks file for travis-freebsd-ansible
 - name: install
   pkgng:
     name: py37-iocage

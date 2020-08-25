@@ -1,6 +1,6 @@
 ---
 galaxy_info:
-  role_name: travis_freebsd_ansible
+  role_name: travis_freebsd_vagrant
   author: Attila GOLONCSER
   description: >-
     Dummy role to test Travis CI running Molecule tests in Vagrant targetting
