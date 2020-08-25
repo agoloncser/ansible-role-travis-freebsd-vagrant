@@ -4,8 +4,8 @@
   become: yes
   become_user: root
   become_method: sudo
-  tasks:
+  pre_tasks:
     - debug:
         msg: "{{ ansible_user_id }} ::: {{ ansible_user }}"
-    - import_role:
-        name: "travis-freebsd-ansible"
+  roles:
+    - travis-freebsd-ansible
