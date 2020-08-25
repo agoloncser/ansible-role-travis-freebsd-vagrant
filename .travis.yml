@@ -1,10 +1,11 @@
 ---
 version: ~> 1.0
-import: agoloncser/travis-shared-configs:vagrant-molecule.yml
+import: agoloncser/travis-shared-configs:vagrant-molecule.yml@AGL20-238-rename-role
 
 env:
   global:
     - VAGRANT_VER: 2.2.9
+    - ROLE_NAME: travis_freebsd_ansible
   jobs:
     - MOLECULE_DISTRO_BOX: roboxes/freebsd11
     - MOLECULE_DISTRO_BOX: roboxes/freebsd12

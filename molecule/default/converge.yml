@@ -8,4 +8,4 @@
     - debug:
         msg: "{{ ansible_user_id }} ::: {{ ansible_user }}"
   roles:
-    - travis-freebsd-ansible
+    - travis_freebsd_ansible
